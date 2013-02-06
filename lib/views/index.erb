@@ -1,0 +1,7 @@
+<h1>Singly OAuth Example</h1>
+<% %w[facebook twitter].each do |service| %>
+	<li>
+		<%= service.capitalize %> is not connected.
+		<a href="/auth/singly?service=<% service%>"> Connect </a>
+	</li>
+<% end %>
